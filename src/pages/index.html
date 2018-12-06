@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="../scripts/jquery-1.9.0.js" type="text/javascript" data-main="index.js"></script>
+
+<body>
+    <div></div>
+</body>
+<script>
+    $.ajax({
+        // url: "https://localhost:9090/listmore?pageNo=2&pageSize=15",
+        url: "https://localhost:9090/listmore?page=2&city=101020100&query=PHP",
+        success: function (data) {
+            console.log(data);
+        }
+    })
+</script>
+<!-- https://www.zhipin.com/mobile/jobs.json?page=2&city=101020100&query=PHP -->
+</html>
